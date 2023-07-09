@@ -1,0 +1,144 @@
+*{
+    margin:0;
+    padding:0;
+    font-family:'poppins',sans-serif;
+    box-sizing:border-box;
+    
+}
+body{
+ 	background-image: url("bgimage.jpg");
+  }
+.container{
+    width:100%;
+    min-height: 100vh;
+    
+    padding:10px;
+
+}
+.todo-app{
+    width:100%;
+    max-width: 540px;
+    background:#fff;
+    margin:100px auto 20px;
+    padding:40px 30px 70px;
+    border-radius: 10px;
+}
+.todo-app h2{
+    color:#002765;
+    display:flex;
+    align-items:center;
+    margin-bottom:20px;
+}
+.row{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    background:gainsboro;
+    border-radius:30px;
+    padding-left:20px;
+    margin-bottom:25px;
+}
+input{
+    flex:1;
+    border:none;
+    outline:none;
+    background:transparent;
+    padding:10px;
+    font-weight:14px;
+}
+.AddButton{
+    border:none;
+    outline:none;
+    padding:16px 50px;
+    background:blue;
+    color:#fff;
+    font-size:16px;
+    cursor:pointer;
+    border-radius:40px;
+}
+ul li{
+    list-style:none;
+    font-size:17px;
+    padding:12px 8px 12px 50px;
+    user-select: none;
+    cursor:pointer;
+    position: relative;
+}
+ul li::before{
+    content:'';
+    position: absolute;
+    height:28px;
+    width:28px;
+    background-image: url(images/unchecked.png);
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+    top:12px;
+    left:8px;
+}
+ul li.checked{
+    color:#555;
+    text-decoration: line-through;
+}
+ul li.checked::before{
+    width:28px;
+    background-image:url(images/checked.png);
+    
+}
+.taskDetail{
+	font-family: "Times New Roman", Times, serif;
+	font-size: 20px;
+}
+.deleteButton{
+	margin-right:0px;
+	border:none;
+    outline:none;
+    padding:10px 20px;
+    background:red;
+    color:#fff;
+    font-size:16px;
+    cursor:pointer;
+    border-radius:40px;
+}
+.DoButton{
+	border:none;
+    outline:none;
+    padding:10px 20px;
+    background:green;
+    color:#fff;
+    font-size:16px;
+    cursor:pointer;
+    border-radius:40px;
+}
+
+.listBox{
+	height:60px;
+	font-size:16px;
+	padding:10px 20px;
+	width:90%;
+	background-color:rgb(216, 216, 216);
+    margin-left: auto;
+    margin-right: auto;
+    text-align:center;
+    display:flex;
+    border-radius:40px;
+}
+.con{
+	width:60%;
+	text-align:center;
+	height:30px;
+	display:flex;
+	float: right;
+}
+.con2{
+	width:30%;
+	text-align:center;
+	height:30px;
+	display:flex;
+	float: right;
+}
+.text{
+	font-size:20px;
+	text-align:center;
+	margin-top:5px;
+}
